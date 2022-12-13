@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <ul
+    style="
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    "
+  >
+    <li tysle="float: left;">
+      <a
+        style="
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        "
+        class="active"
+        href="index.html"
+        >Home</a
+      >
+    </li>
+    <li style="float: left">
+      <a
+        style="
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        "
+        href="imagws.html"
+        >clothes
+      </a>
+    </li>
+    <li style="float: left">
+      <a
+        style="
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        "
+        href="shoes.html"
+        >shoes</a
+      >
+    </li>
+    <li style="float: left">
+      <a
+        style="
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        "
+        href="stockings.html"
+        >stockings</a
+      >
+    </li>
+    <li style="float: left">
+      <a
+        style="
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        "
+        href="adidas.html"
+        >adidas</a
+      >
+    </li>
+    <li style="float: left">
+      <a
+        style="
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        "
+        href="adidas logo.html"
+        >adidas logo
+      </a>
+    </li>
+    <li style="float: left">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          href="login.html"
+          >Login
+        </a>
+      </li>
+
+  </ul>
+
+    <h1> Login</h1>
+    <p> Username :</p>
+
+
+    <input type="text" id="username"/>
+
+    <p> password :</p>
+
+    <input type="password" id="password"/>
+
+    <button id="btn"  onclick="singin()"> singn-in</button>
+
+    <script>
+
+function singin(){     
+
+    var username=document.getElementById("username").value; 
+    var password=document.getElementById("password").value;
+    console.log(username)
+    console.log(password)
+    if (username =="Alma@gmail.com"&& password == "Alma0310") {
+
+        window.location.href = "index.html";
+
+    
+    }
+}
+
+{ 
+
+    else { 
+        alert (" Erorr! Wrong Username / password");
+    }
+
+}
+
+
+
+    </script>
+
+</body>
+</html>

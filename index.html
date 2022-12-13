@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://cdn.icon-icons.com/icons2/2699/PNG/512/adidas_logo_icon_169639.png"
+    />
+    <title>adidas</title>
+    <style>
+      body {
+        background-image: linear-gradient(to right, pink, rgb(184, 17, 218));
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <ul
+      style="
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      "
+    >
+      <li tysle="float: left;">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          class="active"
+          href="index.html"
+          >Home</a
+        >
+      </li>
+      <li style="float: left">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          href="imagws.html"
+          >clothes
+        </a>
+      </li>
+      <li style="float: left">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          href="shoes.html"
+          >shoes</a
+        >
+      </li>
+      <li style="float: left">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          href="stockings.html"
+          >stockings</a
+        >
+      </li>
+      <li style="float: left">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          href="adidas.html"
+          >adidas</a
+        >
+      </li>
+      <li style="float: left">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          href="adidas logo.html"
+          >adidas logo
+        </a>
+      </li>
+      <li style="float: left">
+        <a
+          style="
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          "
+          href="login.html"
+          >Login
+        </a>
+      </li>
+    </ul>
+
+    <input type="color" id="colerpick" onchange="changeBackgroundcoler()" />
+    <form>
+      <label>Username :</label>
+      <input type="text" />
+      <br />
+      <label> Password: </label>
+      <input type="password" />
+    </form>
+    <h1 id="first">Hi</h1>
+    <input type="text" id="addedtext" />
+    <button onclick="addtolist()">Add</button>
+
+    <ul id="list">
+      <li>cart</li>
+      <li>tometo</li>
+    </ul>
+
+    <br />
+    <img
+      id="profilepic"
+      src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png"
+      width="50px"
+    />
+
+    <input onchange="changeprofile()" type="file" name="" id="upload" />
+
+    <button onclick="changeText()">Click Here!</button>
+
+    <button onclick="changeBackground()">change</button>
+    <script>
+      var name = document.getElementById("first").innerText;
+
+      console.log(name);
+
+      function changeText() {
+        document.getElementById("first").innerText = " Hi I am Alma ";
+      }
+
+      function changeBackground() {
+        document.body.style.background =
+          "linear-gradient(to right, pink, blue)";
+      }
+
+      function changeBackgroundcoler() {
+        var coler = document.getElementById("colerpick").value;
+        document.body.style.background = coler;
+      }
+
+      function changeprofile() {
+        var newimg = document.getElementById("upload").files[0].name;
+        document.getElementById("profilepic").src = newimg;
+      }
+
+      function addtolist() {
+        var ul = document.getElementById("list");
+        var li = document.createElement("li");
+        li.appendChild(
+          document.createTextNode(document.getElementById("addedtext").value)
+        );
+        ul.appendChild(li);
+      }
+    </script>
+
+    <center>
+      <h1>Adidas</h1>
+    </center>
+<hr>
+    <img width ="20%"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2560px-Adidas_Logo.svg.png"alt=>
+
+    <p>
+      Adidas Originals (often stylized as adidas Originals) is a brand of a line
+      of casual and sportswear created by German multinational corporation
+      Adidas. It consists of a heritage line, specializing in athletic shoes,
+      t-shirts, jackets, bags, sunglasses and other accessories. The clothing
+      and the accessories are under such categories as Superstar and Adicolor,
+      designed by Adidas itself. There was also a collection named "Originals
+      Denim" by Diesel, a concept trialled in New York City and Berlin.
+    </p>
+
+    <div class="grid-container">
+      <div class="grid-item"> <img width="20% src="</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>  
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>  
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>  
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
+
